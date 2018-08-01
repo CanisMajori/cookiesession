@@ -28,9 +28,6 @@ server.get('/coderimg',function (req,res) {
     req.session.captcha=captcha.text;
     res.type('svg');
     res.status(200).send(captcha.data);
-
-
-
 });
 
 server.listen(81);
